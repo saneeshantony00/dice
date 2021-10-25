@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundimg" translatesAutoresizingMaskIntoConstraints="NO" id="XIC-Jn-xzo">
+                                <rect key="frame" x="-161" y="-206.5" width="736" height="1309"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZJu-XF-og3">
+                                <rect key="frame" x="49" y="124" width="316" height="388"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="LUCK?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7t-k0-g0e">
+                                        <rect key="frame" x="0.0" y="0.0" width="316" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" red="0.17822218980000001" green="1" blue="0.16620808070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5Hc-HY-BfR">
+                                        <rect key="frame" x="0.0" y="133.5" width="316" height="121.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="u1Y-PB-oCa">
+                                                <rect key="frame" x="0.0" y="0.0" width="133" height="121.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="133" id="gmM-8r-pHB"/>
+                                                    <constraint firstAttribute="height" constant="121.5" id="kOr-ac-lc2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="XfU-c1-iJN">
+                                                <rect key="frame" x="183" y="0.0" width="133" height="121.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="121.5" id="cmQ-Bs-HXg"/>
+                                                    <constraint firstAttribute="width" constant="133" id="mvb-Eh-soC"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkf-Ze-lBv">
+                                        <rect key="frame" x="0.0" y="355" width="316" height="33"/>
+                                        <color key="backgroundColor" red="0.080589550242891231" green="0.4551692033678757" blue="0.073507057032732165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Roll">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                            <color key="titleShadowColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9p-nI-Ici"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZJu-XF-og3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="HdJ-ZI-UGp"/>
+                            <constraint firstItem="XIC-Jn-xzo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IXI-F8-qDm"/>
+                            <constraint firstItem="ZJu-XF-og3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZI3-Le-JqM"/>
+                            <constraint firstItem="XIC-Jn-xzo" firstAttribute="centerX" secondItem="ZJu-XF-og3" secondAttribute="centerX" id="d1Y-Qh-niZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftImageView" destination="u1Y-PB-oCa" id="Wcb-Ip-t0M"/>
+                        <outlet property="rightImageView" destination="XfU-c1-iJN" id="02K-GB-jrz"/>
+                        <outlet property="txt" destination="A7t-k0-g0e" id="3cB-tE-2pu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2065.217391304348" y="189.50892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundimg" width="736" height="1309"/>
+        <image name="dice1" width="1200" height="1200"/>
+        <image name="dice2" width="557" height="557"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
